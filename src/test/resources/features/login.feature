@@ -17,7 +17,7 @@ Funcionalidade: Login
 
   @login-invalido
   Esquema do Cenário: Cenário:  <name>
-    #Quando preencho login "<user>" e senha "<password>"
+    Quando preencho login "<user>" e senha "<password>"
     E clico em Login
     Então vejo mensagem "<message>" de campo não preenchido
 
