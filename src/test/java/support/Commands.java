@@ -22,7 +22,7 @@ public class Commands extends RunCucumber {
         System.out.println("############################################");
         try {
             System.out.println("*********** Irá clicar no elemento: " + element);
-            waitElementBeClickable(element, 10);
+            waitElementBeClickable(element, 1000);
             getDriver().findElement(element).click();
             System.out.println("*********** Clicou no elemento: " + element);
         } catch (Exception error){
@@ -52,7 +52,7 @@ public class Commands extends RunCucumber {
         String actualMessage = "";
         System.out.println("############################################");
         System.out.println("Vai validar mensagem: " + expectedMessage);
-        waitElementBeVisible(element, 10000);
+        waitElementBeVisible(element, 10);
         actualMessage = getDriver().findElement(element).getText();
 
         // Quando não der certo, vai quebrar o teste!!!

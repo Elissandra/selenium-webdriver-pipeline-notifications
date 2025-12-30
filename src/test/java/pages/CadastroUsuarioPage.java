@@ -1,7 +1,11 @@
 package pages;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import org.openqa.selenium.By;
 import runner.RunCucumber;
+import support.ScreenshotUtils;
+
 import static support.Commands.*;
 
 public class CadastroUsuarioPage extends RunCucumber {
@@ -16,6 +20,7 @@ public class CadastroUsuarioPage extends RunCucumber {
     public void preencheNome(String nome){
         fillDield(campoNome, nome);
     }
+
     public void preencheEmail(String email){
         fillDield(campoEmail, email);
     }
