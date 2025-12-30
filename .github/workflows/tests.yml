@@ -30,3 +30,12 @@ jobs:
       - name: Run Test
         run: mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci
 
+      - name: Gerar relatório
+        run: mvn cluecucumber-report:reporting
+
+      - name: Arquivar relatório
+        run: actions/upload-artifact@v3
+          with:
+            name: report-tests
+            path: '**/formated-report/'
+
