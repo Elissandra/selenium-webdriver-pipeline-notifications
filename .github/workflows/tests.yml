@@ -40,4 +40,3 @@ jobs:
         with:
           name: report-tests
           path: '**/formated-report/'
-
