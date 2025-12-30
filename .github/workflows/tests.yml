@@ -31,9 +31,11 @@ jobs:
         run: mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci
 
       - name: Gerar relatório
+        if: always()
         run: mvn cluecumber-report:reporting
 
       - name: Arquivar relatório
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: report-tests
