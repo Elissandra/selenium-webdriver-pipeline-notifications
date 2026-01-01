@@ -46,7 +46,7 @@ public class RunBase {
         }
 
         if(driver != null){
-            driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
             driver.manage().window().maximize();
         }
 
