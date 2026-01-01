@@ -28,7 +28,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Test
-        run: mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci
+        run: mvn test -Dtest=RunCucumber -Dbrowser=chrome -Dcucumber.options="--tags @login-sucesso"
 
       - name: Gerar relatório
         if: always()
