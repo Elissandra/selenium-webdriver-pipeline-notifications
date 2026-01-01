@@ -37,14 +37,11 @@ public class LoginPage extends RunCucumber {
     }
 
     public void verificaLoginSucesso(){
-        //checkMessage(By.id("swal2-title"), "Login realizado");
         checkMessage(By.cssSelector("#swal2-title"), "Login realizado");
-        //waitElementBeVisible(By.id("swal2-title"), 10000);
     }
 
     public void verificaCampoVazio(String message){
         checkMessage(By.className("invalid_input"), message);
-        //waitElementBeVisible(By.id("swal2-title"), 10000);
     }
 
     public void acessarTelaCadastro(){
