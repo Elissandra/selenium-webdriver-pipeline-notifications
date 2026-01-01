@@ -47,4 +47,3 @@ mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci
 
 # Test Plan
 
-<img width="1485" height="776" alt="Captura de tela 2026-01-01 193127" src="https://github.com/user-attachments/assets/9bea6a46-5fe9-4521-9121-fd1cbc34c1ad" />
