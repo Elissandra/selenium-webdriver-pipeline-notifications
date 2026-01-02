@@ -59,6 +59,6 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://images.icon-icons.com/1378/PNG/512/dialogerror_92823.png?size=48
-          SLACK_MESSAGE: 'Erro na execução de testes do PR :fire:'
-          SLACK_TITLE: 'Erro na execução de testes do PR :fire:'
+          SLACK_MESSAGE: 'Falha na execução de testes do PR :fire:'
+          SLACK_TITLE: 'Falha na execução de testes do PR :fire:'
           SLACK_USERNAME: FALHA
