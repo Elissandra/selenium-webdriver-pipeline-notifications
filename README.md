@@ -1,6 +1,6 @@
 # Introdução
 
-Projeto para implementar testes de automação web (CI/CD) com selenium webdriver + java + cucumber (BDD/Gherkin) no site da aplicação https://qazando.com.br/curso.html , executar testes via pipeline, realizar agendamento de execução de testes e enviar notificação dos resultados de testes pelo Slack.
+Projeto para implementar testes de automação web (CI/CD) com selenium webdriver + java + cucumber (BDD/Gherkin) no site da aplicação http://automationpratice.com.br/ , executar testes via pipeline, realizar agendamento de execução de testes e enviar notificação dos resultados de testes pelo Slack.
 
 
 * Local onde serão gerados os relatórios ao executar os testes:
@@ -53,24 +53,24 @@ mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci
 
 * Smoke Tests - PR
   
-  Sucesso
+  Notificação de Teste com Sucesso
   
-  <img width="634" height="362" alt="Captura de tela 2026-01-01 191007" src="https://github.com/user-attachments/assets/27b656d2-38a1-4a54-a87b-609dcf26163e" />
+  <img width="634" height="285" alt="Captura de tela 2026-01-01 193127" src="https://github.com/user-attachments/assets/81648926-50ec-45d2-aee8-177d4a4afb60" />
 
   
-  Falha
+  Notificação de Teste com Falha
   
   <img width="633" height="296" alt="Captura de tela 2026-01-01 191037" src="https://github.com/user-attachments/assets/39accc0a-24ce-4bdf-b205-69cabb73a2d1" />
 
 
  * Schedule Tests
   
-   Sucesso
+   Notificação de Teste com Sucesso
   
    <img width="641" height="291" alt="Captura de tela 2026-01-01 200006" src="https://github.com/user-attachments/assets/fc8fd2cf-4a40-4d2b-9d36-321d20a76968" />
 
   
-   Falha
+   Notificação de Teste com Falha
   
    <img width="652" height="282" alt="Captura de tela 2026-01-01 200031" src="https://github.com/user-attachments/assets/7f8688b4-262f-4953-9cba-efc8335b57c9" />
   
